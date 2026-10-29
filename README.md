@@ -1,5 +1,7 @@
 # TrustMart — a clearer electronics marketplace
 
+**[Try the live TrustMart demo](https://trustmart.sohaibijaz.dev/)** · [Case study](https://sohaibijaz.dev/projects/trustmart/) · [Portfolio](https://sohaibijaz.dev)
+
 ![Modern TrustMart interface](https://raw.githubusercontent.com/sohaibijaz940/sohaib-engineering-portfolio/main/public/previews/trustmart.webp)
 
 A market companion for in-person electronics shopping in Pakistan. It helps people inspect comparable component offers, current supplier records and seller disclosures. **It does not take payments or certify manufacturer authenticity.**
