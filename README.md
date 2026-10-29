@@ -1,27 +1,29 @@
-# TrustMart Digital Marketplace 🛒
+# TrustMart — a clearer electronics marketplace
 
-**Developed:** Semester 5 (Introduction to Software Engineering)
+![Modern TrustMart interface](https://raw.githubusercontent.com/sohaibijaz940/sohaib-engineering-portfolio/main/public/previews/trustmart.webp)
 
-TrustMart is a verified, database-driven marketplace application designed to aggregate smartphone component prices and combat deceptive local market pricing. It provides a transparent, secure environment for consumers and verified suppliers.
+A market companion for in-person electronics shopping in Pakistan. It helps people inspect comparable component offers, current supplier records and seller disclosures. **It does not take payments or certify manufacturer authenticity.**
 
-## ✨ Features
+## Two editions, one project history
 
-* **Verified Price Aggregation:** Dynamically calculates and displays current market averages for various smartphone components to ensure price transparency.
-* **Role-Based Authentication:** Secure login and registration system with distinct access levels and dashboards for Consumers, Verified Suppliers, and System Administrators.
-* **Supplier Validation:** Allows users to confirm the authenticity and validated status of registered suppliers before making purchases.
-* **Responsive UI/UX:** Comprehensive, user-friendly interface prototyped in Figma and implemented with modern frontend web technologies.
+This repository retains the original React/Vite coursework. The original MIT App Inventor scanner prototype and SRS are retained in the owner's local archive. The modern React/TypeScript + Flask/SQLite edition now lives in the shared portfolio source linked below; the coursework files and Git history here have not been replaced.
 
-## 🛠️ Tech Stack
+## Modern demonstration
 
-* **Frontend:** React.js, Vite, Bootstrap
-* **Backend Runtime:** Node.js
-* **Design & Prototyping:** Figma
-* **Architecture:** RESTful API integration, Component-Based UI
+- Consumer, supplier and administrator flows with server-side role checks; consumer Google OAuth is separately configured.
+- Camera QR lookup on localhost/HTTPS, manual Shop ID and image fallback. A decoded code resolves to the current backend record, including unknown/revoked outcomes.
+- Comparable sample pricing: only approved, verified, in-stock, fresh offers; 20% trimming per tail for at least five eligible offers, otherwise an untrimmed mean with low confidence.
+- Product condition, origin/grade explanations, repair-history disclosures, shop details, directions and reporting.
+- Optional app-scoped Gemini assistant with catalogue context; it needs its own private key.
 
-## 🚀 How to Run Locally
+All shops and prices are fictional demo data. Supplier verification is not proof that every product is authentic. Demo login fixtures are public teaching data and must be reviewed before production use.
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/sohaibijaz940/trustmart-project.git](https://github.com/sohaibijaz940/trustmart-project.git)
-## Screenshots
-   <img width="1238" height="916" alt="image" src="https://github.com/user-attachments/assets/5abb3709-22e3-4a54-926f-a02bc7554eba" />
+## Source and setup
+
+- [Complete modern source](https://github.com/sohaibijaz940/sohaib-engineering-portfolio)
+- [This project's modern page source](https://github.com/sohaibijaz940/sohaib-engineering-portfolio/tree/main/trustmart-app/)
+- [Local setup, providers and verification](https://github.com/sohaibijaz940/sohaib-engineering-portfolio#run-locally)
+- [Engineering article source](https://github.com/sohaibijaz940/sohaib-engineering-portfolio/blob/main/src/content/writing/trustmart.mdx)
+- [Original README, preserved for historical context](docs/ORIGINAL_README.md)
+
+The portfolio is currently a local demonstration; a public hosted demo URL will be added after deployment. Links above open source code, not a hosted application. No localhost URL is presented as a public demo.
